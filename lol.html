@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Your Fish!</title>
+    
+    <style>
+        /* Basic styling to center everything on your screen */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            min-width: 300px;
+        }
+
+        /* Form Layout */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        input {
+            padding: 12px;
+            font-size: 1rem;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Smooth CSS Fade Animation */
+        .hidden {
+            opacity: 0;
+            display: none;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade-in {
+            display: block;
+            opacity: 1;
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #28a745; /* Clean green text for the milestone message */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div id="naming-container">
+            <h2>Name your fish:</h2>
+            <form id="fish-form">
+                <input type="text" id="fish-name-input" placeholder="Enter fish name..." required maxlength="20">
+                <button type="submit">Submit Name</button>
+            </form>
+        </div>
+
+        <div id="adventure-message" class="hidden"></div>
+    </div>
+
+    <script>
+        // Grab our HTML elements using their unique IDs
+        const fishForm = document.getElementById('fish-form');
+        const fishNameInput = document.getElementById('fish-name-input');
+        const namingContainer = document.getElementById('naming-container');
+        const adventureMessage = document.getElementById('adventure-message');
+
+        // Listen for when the user clicks the submit button
+        fishForm.addEventListener('submit', function(event) {
+            // Stop the page from refreshing automatically
+            event.preventDefault(); 
+
+            // Get the name the user typed into the input field
+            const chosenName = fishNameInput.value;
+
+            // Hide the entire form container immediately
