@@ -22,7 +22,7 @@ const fishInput = document.getElementById("fish-name-input")
 const responseMsg = document.getElementById("response-msg")
 
 function fadeouting(){
-    quitBtn.classList.add("animate__animated", "animate__bounceOut")
+    quitBtn.classList.add("animate__animated", "animate__bounceOut", "none")
     startBtn.classList.add("animate__animated", "animate__bounceOut")
     intro.classList.add("animate__animated", "animate__bounceOut")
     fish.classList.add("show", "animate__animated", "animate__rubberBand")
