@@ -83,6 +83,9 @@ figure{
     pointer-events: auto;
     transform: scale(1);
 }
+#quitBtn.none{
+pointer-events: none;
+}
 #quitBtn:hover{
     transform: scale(1.2);
 }
