@@ -217,6 +217,7 @@ input{
     border-radius: 10px;
     pointer-events: none;
     padding: 6px 30px;
+    color: black;
 
 }
 #buttonyes.show{
@@ -233,6 +234,7 @@ input{
     border-radius: 10px;
     pointer-events: none;
     padding: 6px 35px;
+    color: black;
 }
 #buttonno.show{
     opacity: 1;
