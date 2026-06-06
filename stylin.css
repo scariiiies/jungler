@@ -23,7 +23,7 @@ body{
 .plan-btn{
     padding: 6px 30px;
     border-radius: 20px;
-    font-family: "Pixel Pirate";
+    font-family:"Pixel Takhisis";
     color:rgb(236, 251, 251);
     background-color: rgb(109, 135, 143);
     transition: 0.2s;
@@ -35,7 +35,7 @@ body{
 .plan-btn2{
     padding: 6px 30px;
     border-radius: 20px;
-    font-family: "Pixel Pirate";
+    font-family: "Pixel Takhisis";
     color: rgb(109, 135, 143);
     background-color:rgb(218, 233, 233);
     border-color: #5d716b ;
