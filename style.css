@@ -22,6 +22,10 @@ section{
     height: auto;
 }
 
+button{
+    font-family:'Los Angeles Games Corp';
+}
+
 
 figure{
     display: flex;
