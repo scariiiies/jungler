@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Pixel Takhisis";
+    src: url(Pixel\ Takhisis.otf);
+}
+
+body{
+    font-family:'Pixel Takhisis';
+    justify-content: center;
+}
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    
+}
+.pricings{
+    text-align: center;
+    box-shadow: -4px 4px 0px #79958d;
+}
+
+.plan-btn{
+    padding: 6px 30px;
+    border-radius: 20px;
+    font-family: "Pixel Pirate";
+    color:rgb(236, 251, 251);
+    background-color: rgb(109, 135, 143);
+    transition: 0.2s;
+}
+.plan-btn:hover{
+    transform: scale(1.1);
+}
+
+.plan-btn2{
+    padding: 6px 30px;
+    border-radius: 20px;
+    font-family: "Pixel Pirate";
+    color: rgb(109, 135, 143);
+    background-color:rgb(218, 233, 233);
+    border-color: #5d716b ;
+    border-style: inset;
+    transition: 0.2s;
+}
+.plan-btn2:hover{
+    transform: scale(1.1);
+}
+
+.price{
+    font-size: 3rem;
+}
+
+.containerform{
+    width: 100%;
+    max-width: 456px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background-image: url("slay.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+h1{
+    font-size: 3rem;
+    text-shadow: -2px 2px 0 #79958d;
+    color: #abcdc3;
+}
+
+#clown{
+    opacity: 0;
+}
+#clown.show{
+    opacity: 1;
+}
+
+.pricings p {
+    line-height: 1.1;
+}
+
+#addy {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    scale: 0.9;
+    pointer-events: none;
+}
+#addy.show{
+    opacity: 1;
+    scale: 1.1;
+    pointer-events: all;
+}
+#addy.wow{
+    content: url(uuid.gif);
+    width: 380px;
+}
+
+
+#text-split .text-xl {
+  font-size: 1.5rem;
+  color: currentColor;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+}
+
+.docs-demo-html{
+    background-image: url(added.webp);
+    width: 380px;
+
+    
+}

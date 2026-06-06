@@ -83,11 +83,11 @@ figure{
     pointer-events: auto;
     transform: scale(1);
 }
-#quitBtn.none{
-pointer-events: none;
-}
 #quitBtn:hover{
     transform: scale(1.2);
+}
+#quitBtn.none{
+pointer-events: none;
 }
 
 .container{
@@ -146,6 +146,7 @@ pointer-events: none;
 #naming-container{
     opacity: 0;
     margin-top: -30px;
+    pointer-events: none;
 }
 #naming-container.show{
     opacity: 1;
@@ -153,6 +154,7 @@ pointer-events: none;
     transform: scale(1)
     ;
     transition: ease-in;
+    pointer-events: all;
 }
 
 #card{
@@ -162,6 +164,11 @@ pointer-events: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     min-width: 100px;
+}
+
+
+#fish-form.show{
+    pointer-events: auto;
 }
 
 form{
@@ -196,4 +203,68 @@ input{
 }
 #response-msg.show {
     opacity: 1;
+}
+
+#buttonyes{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    font-size: xx-large;
+    border-radius: 10px;
+    pointer-events: none;
+    padding: 6px 30px;
+
+}
+#buttonyes.show{
+    opacity: 1;
+    pointer-events: auto;   
+}
+
+#buttonno{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.1s ease;
+    position: absolute;
+    font-size: xx-large;
+    border-radius: 10px;
+    pointer-events: none;
+    padding: 6px 35px;
+}
+#buttonno.show{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.1s ease;
+    pointer-events: all;
+}
+
+#memes1{
+    position: absolute;
+    justify-content: center;
+    gap: 10px;
+    display: block;
+    margin-top: 200px;
+    opacity: 0;
+}
+#memes1.show{
+    opacity: 1;
+}
+
+#memes2, #memes3 {
+    position: absolute;
+    justify-content: center;
+    opacity: 0;
+    margin-top: 100px;
+}
+#memes2.show{
+    opacity: 1;
+}
+
+#boom{
+    opacity: 0;
+    margin-top: -150px;
+    z-index: -100;
+}
+#boom.show{
+    opacity: 1;
+    z-index: 1000;
 }
