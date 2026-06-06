@@ -98,7 +98,7 @@ h1{
 }
 #addy.wow{
     content: url(uuid.gif);
-    width: 380px;
+    width: 300px;
 }
 
 
@@ -109,9 +109,6 @@ h1{
   line-height: 1.35;
 }
 
-.docs-demo-html{
-    background-image: url(added.webp);
-    width: 380px;
-
-    
+button{
+    font-family:'Pixel Takhisis';
 }
